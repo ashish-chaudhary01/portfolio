@@ -9,7 +9,7 @@ function ContactSection() {
     message: "",
   });
 
-  const data = [
+  const inputData = [
     {
       label: "name",
       value: formData.name,
@@ -24,6 +24,19 @@ function ContactSection() {
     },
   ];
 
+  const links = [
+    {
+      url: "https://github.com/ashish-chaudhary01",
+      label: "GitHub",
+      icon: "",
+    },
+    {
+      url: "#",
+      label: "LinkedIn",
+      icon: "",
+    },
+  ];
+
   const input =
     "border border-white/20 bg-white/2 px-4 py-3.5 rounded-lg outline-none focus:ring-1 ring-[#2DC7FF] focus:shadow-[0_0_8px_#2DC7FF]";
   return (
@@ -32,9 +45,7 @@ function ContactSection() {
         <p className="uppercase text-indigo-400 font-medium tracking-[0.25em] text-sm mb-3">
           get in touch
         </p>
-        <p className="text-xl sm:text-2xl md:text-3xl font-extrabold mb-3">
-          Let's Connect
-        </p>
+        <p className="text-3xl font-extrabold mb-3">Let's Connect</p>
         <p className=" text-slate-300">
           Have a project in mind or want to collaborate? I'd love to hear from
           you.
@@ -99,6 +110,19 @@ function ContactSection() {
             </div>
           </div>
           {/* links */}
+          <div className="flex gap-4 items-center">
+            {links.map((link, idx) => (
+              <a
+                key={idx}
+                href={link.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex-1 px-4 py-3 flex items-center justify-center border border-white/10 bg-white/5 rounded-md font-extrabold text-md hover:-translate-y-1.25 duration-200 hover:bg-white/20 backdrop-blur-md"
+              >
+                {link.label}
+              </a>
+            ))}
+          </div>
         </motion.div>
 
         {/* right container */}
@@ -118,7 +142,7 @@ function ContactSection() {
           <h2 className="text-[1.1rem] font-bold mb-10">Send a message</h2>
 
           <form action="#" className="flex flex-col gap-10">
-            {data.map((inputs, idx) => (
+            {inputData.map((inputs, idx) => (
               <div className="flex flex-col gap-4" key={idx}>
                 <label
                   className="text-sm font-bold capitalize"

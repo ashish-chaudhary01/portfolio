@@ -43,7 +43,21 @@ function ContactSection() {
       {/* grid part */}
       <div className="grid grid-cols-1 md:grid-cols-[1fr_1.5fr] gap-10 sm:gap-14 max-w-250 mx-auto">
         {/* left container */}
-        <div className="space-y-6">
+        <motion.div
+          initial={{ opacity: 0, x: -30 }}
+          whileInView={{
+            opacity: 1,
+            x: 0,
+            transition: {
+              duration: 0.6,
+              ease: "easeInOut",
+            },
+          }}
+          viewport={{
+            once: true,
+          }}
+          className="space-y-6"
+        >
           <div className="border border-white/10 bg-white/5 backdrop-blur-md p-8 rounded-xl">
             <div className="mb-2 text-white bg-linear-to-r from-blue-500 to-indigo-600 p-3 rounded-full inline-block">
               <MessageSquare />
@@ -85,10 +99,22 @@ function ContactSection() {
             </div>
           </div>
           {/* links */}
-        </div>
+        </motion.div>
 
         {/* right container */}
-        <motiondiv className="rounded-xl bg-white/5 backdrop-blur-md p-8 border border-white/10">
+        <motion.div
+          initial={{ opacity: 0, x: 30 }}
+          whileInView={{
+            opacity: 1,
+            x: 0,
+            transition: {
+              duration: 0.6,
+              ease: "easeInOut",
+            },
+          }}
+          viewport={{ once: true }}
+          className="rounded-xl bg-white/5 backdrop-blur-md p-8 border border-white/10"
+        >
           <h2 className="text-[1.1rem] font-bold mb-10">Send a message</h2>
 
           <form action="#" className="flex flex-col gap-10">
@@ -135,7 +161,7 @@ function ContactSection() {
               <span>Send Message</span>
             </button>
           </form>
-        </motiondiv>
+        </motion.div>
       </div>
     </section>
   );

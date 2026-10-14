@@ -57,7 +57,9 @@ function ContactSection() {
         <p className="uppercase text-indigo-400 font-medium tracking-[0.25em] text-sm mb-3">
           get in touch
         </p>
-        <p className="text-3xl font-extrabold mb-3">Let's Connect</p>
+        <p className="text-[2.5rem] md:text-[3rem] font-black mb-3">
+          Let's Connect
+        </p>
         <p className=" text-slate-300">
           Have a project in mind or want to collaborate? I'd love to hear from
           you.

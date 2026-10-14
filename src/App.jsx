@@ -1,3 +1,4 @@
+import Footer from "./components/Footer";
 import Navbar from "./layouts/Navbar";
 import AboutSection from "./section/About";
 import ContactSection from "./section/Contact";
@@ -14,6 +15,7 @@ function App() {
         <ProjectsSection />
         <ContactSection />
       </main>
+      <Footer />
     </>
   );
 }

@@ -28,12 +28,10 @@ function ContactSection() {
     {
       url: "https://github.com/ashish-chaudhary01",
       label: "GitHub",
-      icon: "",
     },
     {
       url: "#",
       label: "LinkedIn",
-      icon: "",
     },
   ];
 
@@ -117,9 +115,28 @@ function ContactSection() {
                 href={link.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex-1 px-4 py-3 flex items-center justify-center border border-white/10 bg-white/5 rounded-md font-extrabold text-md hover:-translate-y-1.25 duration-200 hover:bg-white/20 backdrop-blur-md"
+                className="flex-1 px-4 py-3 flex items-center gap-2 justify-center border border-white/10 bg-white/5 rounded-md font-extrabold text-md hover:-translate-y-1.25 duration-200 hover:bg-white/20 backdrop-blur-md"
               >
-                {link.label}
+                {link.label === "GitHub" ? (
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 640 640"
+                    className="h-7 w-7 fill-current"
+                    aria-hidden="true"
+                  >
+                    <path d="M280.5 426.5C214.5 418.5 168 371 168 309.5C168 284.5 177 257.5 192 239.5C185.5 223 186.5 188 194 173.5C214 171 241 181.5 257 196C276 190 296 187 320.5 187C345 187 365 190 383 195.5C398.5 181.5 426 171 446 173.5C453 187 454 222 447.5 239C463.5 258 472 283.5 472 309.5C472 371 425.5 417.5 358.5 426C375.5 437 387 461 387 488.5L387 540.5C387 555.5 399.5 564 414.5 558C505 523.5 576 433 576 321C576 179.5 461 64 319.5 64C178 64 64 179.5 64 321C64 432 134.5 524 229.5 558.5C243 563.5 256 554.5 256 541L256 501C249 504 240 506 232 506C199 506 179.5 488 165.5 454.5C160 441 154 433 142.5 431.5C136.5 431 134.5 428.5 134.5 425.5C134.5 419.5 144.5 415 154.5 415C169 415 181.5 424 194.5 442.5C204.5 457 215 463.5 227.5 463.5C240 463.5 248 459 259.5 447.5C268 439 274.5 431.5 280.5 426.5z" />
+                  </svg>
+                ) : (
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    className="h-5 w-5 fill-current"
+                    aria-hidden="true"
+                  >
+                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.049c.476-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.369 4.267 5.455v6.286ZM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124Zm1.782 13.019H3.555V9h3.564v11.452ZM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003Z" />
+                  </svg>
+                )}
+                <span>{link.label}</span>
               </a>
             ))}
           </div>

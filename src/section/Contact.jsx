@@ -39,7 +39,21 @@ function ContactSection() {
     "border border-white/20 bg-white/2 px-4 py-3.5 rounded-lg outline-none focus:ring-1 ring-[#2DC7FF] focus:shadow-[0_0_8px_#2DC7FF]";
   return (
     <section id="contact" className="min-h-screen pt-25 pb-25">
-      <div className="text-center mb-10">
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{
+          opacity: 1,
+          y: 0,
+          transition: {
+            duration: 0.4,
+            ease: "easeOut",
+          },
+        }}
+        viewport={{
+          once: true,
+        }}
+        className="text-center mb-10"
+      >
         <p className="uppercase text-indigo-400 font-medium tracking-[0.25em] text-sm mb-3">
           get in touch
         </p>
@@ -48,7 +62,7 @@ function ContactSection() {
           Have a project in mind or want to collaborate? I'd love to hear from
           you.
         </p>
-      </div>
+      </motion.div>
       {/* grid part */}
       <div className="grid grid-cols-1 md:grid-cols-[1fr_1.5fr] gap-10 sm:gap-14 max-w-250 mx-auto">
         {/* left container */}

@@ -18,13 +18,13 @@ function HeroSection() {
         <div className="flex flex-wrap gap-3">
           <a
             href="#projects"
-            className="py-3 px-6 text-sm text-black bg-white  font-semibold duration-200 hover:scale-[1.02]"
+            className="py-3 px-6 text-sm rounded-xl text-black bg-white  font-semibold duration-200 hover:scale-[1.02]"
           >
             View Projects
           </a>
           <a
             href="#contact"
-            className="py-3 px-6 text-sm text-white border border-white/30  font-semibold duration-200 hover:bg-white hover:text-black"
+            className="py-3 px-6 text-sm rounded-xl text-white border border-white/30  font-semibold duration-200 hover:bg-white hover:text-black"
           >
             Contact me
           </a>

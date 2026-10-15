@@ -43,7 +43,7 @@ function Navbar() {
       </header>
       {/* mobile navbar */}
       {isMenuOpen && (
-        <div className="sm:hidden fixed top-20 left-2 right-2 animate-[fade-in_0.2s_linear] bg-white/5 backdrop-blur-md border border-white/10 rounded-lg p-4">
+        <div className="sm:hidden fixed top-20 left-2 right-2 z-999 animate-[fade-in_0.2s_linear] bg-white/5 backdrop-blur-md border border-white/10 rounded-lg p-4">
           <nav className="flex flex-col gap-3">
             {navlinks.map((item, idx) => (
               <a

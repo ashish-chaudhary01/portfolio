@@ -39,10 +39,6 @@ export const skills = [
     image: "/images/Vite.js.png",
     name: "Vite",
   },
-  // {
-  //   image: "/images/GitHub.png",
-  //   name: "GitHub",
-  // },
   {
     image: "/images/cpp.png",
     name: "C++",
@@ -58,5 +54,17 @@ export const skills = [
   {
     image: "/images/Java.png",
     name: "Java",
+  },
+];
+
+export const projects = [
+  {
+    poster: "/projects-image/movie-flix-home.png",
+    title: "Movie Flix",
+    description:
+      "A modern movie and TV web application that allows users to explore and discover movies, view detailed information, and watch movies and tv shows. Built with React, Tailwind CSS, Typescript and integrated with the TMDB API for real-time movie data.",
+    link: "https://movie-flix-ui.vercel.app/",
+    technologies: ["React Router V7", "Tailwind CSS", "Typescript", "TMDB API"],
+    github: "https://github.com/ashish-chaudhary01/MovieFlix",
   },
 ];

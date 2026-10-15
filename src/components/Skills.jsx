@@ -5,7 +5,7 @@ const marqueeSkills = [...skills, ...skills];
 function Skills() {
   return (
     <>
-      <h2 className="mt-20 text-center font-bold text-3xl sm:text-4xl drop-shadow-2xl">
+      <h2 className="mt-20 text-center font-bold text-[2.5rem] sm:text-4xl drop-shadow-2xl">
         Tech <span className="text-blue-400">Stack</span>
       </h2>
       <div className="group mt-10 overflow-hidden backdrop-blur-md [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">

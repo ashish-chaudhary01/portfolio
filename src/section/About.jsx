@@ -1,10 +1,10 @@
 import { Mail, MapPin, User } from "lucide-react";
-import Skills from "../components/Skills";
+// import Skills from "../components/Skills";
 import { motion } from "motion/react";
 
 function AboutSection() {
   return (
-    <section id="about" className=" min-h-screen">
+    <section id="about" className="max-w-250 mx-auto">
       <h2 className="text-[2.5rem] md:text-[3rem] font-bold text-white mb-16 tracking-tight text-center">
         About Me
       </h2>
@@ -96,8 +96,6 @@ function AboutSection() {
           </div>
         </motion.div>
       </div>
-      {/* skill card */}
-      <Skills />
     </section>
   );
 }

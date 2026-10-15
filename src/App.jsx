@@ -1,4 +1,5 @@
 import Footer from "./components/Footer";
+import Skills from "./components/Skills";
 import Navbar from "./layouts/Navbar";
 import AboutSection from "./section/About";
 import ContactSection from "./section/Contact";
@@ -13,6 +14,8 @@ function App() {
         <HeroSection />
         <AboutSection />
         <ProjectsSection />
+        {/* skill card */}
+        <Skills />
         <ContactSection />
       </main>
       <Footer />

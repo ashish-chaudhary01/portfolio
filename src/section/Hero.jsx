@@ -2,7 +2,7 @@ function HeroSection() {
   return (
     <section
       id="about"
-      className="min-h-screen py-25 flex flex-col justify-end"
+      className="min-h-screen max-w-250 mx-auto py-25 flex flex-col justify-end"
     >
       {/* name */}
       <h2 className="text-[8vw] md:text-[8vw] font-extrabold leading-[0.95] shadow-xl">

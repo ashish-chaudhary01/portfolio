@@ -3,7 +3,7 @@ import ProjectCard from "../components/ProjectCard";
 
 function ProjectsSection() {
   return (
-    <section id="projects" className="py-15 max-w-250 mx-auto">
+    <section id="projects" className="py-15 max-w-300 mx-auto">
       <div className="text-center">
         <p className="uppercase text-indigo-400 font-medium tracking-[0.25em] text-sm mb-3">
           featured projects
